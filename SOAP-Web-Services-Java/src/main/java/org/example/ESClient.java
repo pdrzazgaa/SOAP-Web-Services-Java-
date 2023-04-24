@@ -5,6 +5,7 @@ import org.example.jaxws.server_topdown.*;
 import java.lang.ref.Cleaner;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -141,6 +142,11 @@ public class ESClient {
     public static void main(String[] args) throws MalformedURLException {
 
         URL addr = new URL("http://localhost:8081/personservice?wsdl");
+        try {
+            MyData.myInfo();
+        } catch (UnknownHostException e) {
+            System.out.println("Nie znaleziono hosta");
+        }
         menu();
 
     }
