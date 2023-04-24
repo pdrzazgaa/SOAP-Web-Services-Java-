@@ -17,7 +17,7 @@ import jakarta.xml.ws.WebServiceFeature;
  * Generated source version: 3.0
  * 
  */
-@WebServiceClient(name = "PersonService", targetNamespace = "http://example.org/", wsdlLocation = "file:/Users/paulina/GitHub/SOAP-Web-Services-Java-/SOAP-Web-Services-Java/src/main/resources/personservice.wsdl")
+@WebServiceClient(name = "PersonService", targetNamespace = "http://example.org/", wsdlLocation = "file:/Users/kubaczerwinski77/Studies/sem6/rsi/SOAP-Web-Services-Java-/SOAP-Web-Services-Java/src/main/resources/personservice.wsdl")
 public class PersonService_Service
     extends Service
 {
@@ -30,7 +30,7 @@ public class PersonService_Service
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/Users/paulina/GitHub/SOAP-Web-Services-Java-/SOAP-Web-Services-Java/src/main/resources/personservice.wsdl");
+            url = new URL("file:/Users/kubaczerwinski77/Studies/sem6/rsi/SOAP-Web-Services-Java-/SOAP-Web-Services-Java/src/main/resources/personservice.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

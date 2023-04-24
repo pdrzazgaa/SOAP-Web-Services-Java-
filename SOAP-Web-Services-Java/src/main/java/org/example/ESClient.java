@@ -86,7 +86,7 @@ public class ESClient {
         List<org.example.jaxws.server_topdown.Person> list = pServiceProxy.getAllPersons();
         System.out.println("Lista osób: ");
         for (org.example.jaxws.server_topdown.Person value : list) {
-            System.out.println(value.getId() +" - "+ value.getFirstName());
+            System.out.println(value.getId() +" - "+ value.getFirstName() + " l." + value.getAge());
         }
     }
 
